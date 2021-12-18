@@ -40,3 +40,5 @@ state.list
 .*.sw?
 
 .idea/
+
+.env
