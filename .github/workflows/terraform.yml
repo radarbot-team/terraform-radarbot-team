@@ -65,6 +65,9 @@ jobs:
         if: steps.plan.outcome == 'failure'
         run: exit 1
 
+      - name: Test secrets
+        run : echo "{{ secrets.TEST }}"
+
       - name: Terraform Apply
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: terraform apply -auto-approve
