@@ -7,5 +7,5 @@ module "afbb_0987" {
 module "afbb_0988" {
   source      = "../modules/org-member"
   discord_tag = "afbb#0988"
-  role        = "member"
+  role        = "admin"
 }
