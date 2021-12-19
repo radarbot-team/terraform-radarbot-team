@@ -6,7 +6,7 @@ module "user_map" {
   source = "../../org/map"
 }
 
-resource "github_membership" "org_member" {
+resource "github_membership" "org-member" {
   username = local.github_username
   role     = var.role
 }
