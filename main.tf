@@ -12,3 +12,9 @@ resource "github_team" "all_org_members" {
   description = "All members of the RadarBot Team"
   privacy     = "closed"
 }
+
+# Retrieve information about the currently (PAT) authenticated user
+data "github_user" "self" {
+  username = ""
+}
+
