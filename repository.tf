@@ -1,4 +1,4 @@
-resource "github_repository" "terraform-radarbot-team" {
+resource "github_repository" "terraform_radarbot_team" {
   name        = "terraform-radarbot-team"
   description = "Test Terraform Repository"
   visibility  = "public"
