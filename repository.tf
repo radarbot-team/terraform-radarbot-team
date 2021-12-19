@@ -5,7 +5,7 @@ resource "github_repository" "terraform-radarbot-team" {
 
 }
 
-resource "github_branch_protection" "team_baseline_config" {
+resource "github_branch_protection_v3" "team_baseline_config" {
   repository = github_repository.terraform_radarbot_team.name
   branch     = "master"
 
