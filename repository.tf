@@ -18,3 +18,13 @@ resource "github_branch_protection_v3" "team_baseline_config" {
     require_code_owner_reviews = true
   }
 }
+
+resource "github_repository" "radarbot_team_best_pratices" {
+  name         = "radarbot-team-best-pratices"
+  description  = "RadarBot team best practices guide"
+  topics       = ["best-pratices", "docs"]
+  visibility   = "public"
+  has_issues   = false
+  has_wiki     = false
+  has_projects = false
+}
