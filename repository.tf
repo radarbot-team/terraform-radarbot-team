@@ -1,8 +1,8 @@
 resource "github_repository" "terraform_radarbot_team" {
   name        = "terraform-radarbot-team"
-  description = "Test Terraform Repository"
+  description = "RadarBot team configuration as code using Terraform"
   visibility  = "public"
-
+  topics      = ["config", "terraform"]
 }
 
 resource "github_branch_protection_v3" "team_baseline_config" {
