@@ -7,6 +7,10 @@ terraform {
   }
 }
 
+module "user_map" {
+  source = "./org/map"
+}
+
 resource "github_team" "all_org_members" {
   name        = "all-org-members"
   description = "All members of the RadarBot Team"
