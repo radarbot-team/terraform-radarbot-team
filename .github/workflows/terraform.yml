@@ -67,5 +67,7 @@ jobs:
         run: exit 1
 
       - name: Terraform Apply
+        env:
+          GITHUB_TOKEN: ${{ secrets.TERRAFORM_GITHUB_TOKEN }}
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: terraform apply -auto-approve
