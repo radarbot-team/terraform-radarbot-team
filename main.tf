@@ -6,8 +6,3 @@ terraform {
     }
   }
 }
-
-resource "github_repository" "test-terraform" {
-  name        = "test-terraform"
-  description = "Test Terraform Repository"
-}
