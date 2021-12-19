@@ -1,3 +1,3 @@
 name,description,privacy
 all-org-members,All members of the RadarBot Team,closed
-teste-team,Just a test with terraform,private
+teste-team,Just a test with terraform,secret
