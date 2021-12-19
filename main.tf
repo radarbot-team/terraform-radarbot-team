@@ -19,7 +19,7 @@ resource "github_repository" "terraform-radarbot-team" {
 }
 
 resource "github_branch_protection_v3" "protection-master" {
-  repository = "github_repository.terraform-radarbot-team"
+  repository = "terraform-radarbot-team"
   branch     = "master"
 
   required_pull_request_reviews {
