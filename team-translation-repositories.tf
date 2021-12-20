@@ -1,5 +1,9 @@
 resource "github_repository" "translations_repository" {
   name       = "radarbot-translations"
+  description = "Repository that contains JSON file with all RadarBot translations"
+  has_issues = true
+  has_projects = true
+  topics = ["translations", "microservices"]
   visibility = "private"
 }
 

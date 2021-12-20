@@ -9,5 +9,3 @@ resource "github_team_membership" "indekt_translation_team" {
   username = "indekt"
   role     = "member"
 }
-
-
