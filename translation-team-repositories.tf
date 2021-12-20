@@ -1,5 +1,6 @@
 resource "github_repository" "translations_repository" {
-  name = "radarbot-translations"
+  name       = "radarbot-translations"
+  visibility = "private"
 }
 
 resource "github_team_repository" "team_translations_repository" {
