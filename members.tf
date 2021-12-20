@@ -7,4 +7,3 @@ resource "github_membership" "all" {
   username = each.value.username
   role     = each.value.role
 }
-#

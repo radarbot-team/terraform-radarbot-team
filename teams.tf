@@ -1,19 +1,19 @@
-resource "github_team" "all" {
-  for_each = {
-    for team in csvdecode(file("teams.csv")) :
-    team.name => team
-  }
-
-  name                      = each.value.name
-  description               = each.value.description
-  privacy                   = each.value.privacy
-  create_default_maintainer = true
+resource "github_team" "all_org_members" {
+  name        = "all-org-members"
+  description = "All members of the RadarBot Team"
+  privacy     = "closed"
 }
 
-resource "github_team_membership" "members" {
-  for_each = { for tm in local.team_members : tm.name => tm }
 
-  team_id  = each.value.team_id
-  username = each.value.username
-  role     = each.value.role
+resource "github_team" "bot_core_writer" {
+  name        = "bot-core-writer"
+  description = "Bot Core Writer"
+  privacy     = "secret"
 }
+
+resource "github_team" "web_team_writer" {
+  name        = "web-team-writer"
+  description = "Web team"
+  privacy     = "closed"
+}
+
