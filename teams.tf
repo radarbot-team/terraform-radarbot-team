@@ -17,3 +17,8 @@ resource "github_team" "web_team_writer" {
   privacy     = "closed"
 }
 
+resource "github_team" "translation_team_writer" {
+  name        = "translation-team-writer"
+  description = "Team that provides the translations for Radarbot"
+  privacy     = "closed"
+}
