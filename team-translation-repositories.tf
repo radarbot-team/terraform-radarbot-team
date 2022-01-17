@@ -1,10 +1,10 @@
 resource "github_repository" "translations_repository" {
-  name       = "radarbot-translations"
-  description = "Repository that contains JSON file with all RadarBot translations"
-  has_issues = true
+  name         = "radarbot-translations"
+  description  = "Repository that contains JSON file with all RadarBot translations"
+  has_issues   = true
   has_projects = true
-  topics = ["translations", "microservices"]
-  visibility = "private"
+  topics       = ["translations", "microservices"]
+  visibility   = "public"
 }
 
 resource "github_team_repository" "team_translations_repository" {
