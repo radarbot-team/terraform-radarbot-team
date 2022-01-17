@@ -4,7 +4,7 @@ resource "github_repository" "translations_repository" {
   has_issues   = true
   has_projects = true
   topics       = ["translations", "microservices"]
-  visibility   = "public"
+  visibility   = "private"
 }
 
 resource "github_team_repository" "team_translations_repository" {
