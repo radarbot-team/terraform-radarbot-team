@@ -22,3 +22,9 @@ resource "github_team" "translation_team_writer" {
   description = "Team that provides the translations for Radarbot"
   privacy     = "closed"
 }
+
+resource "github_team" "docs_team_writer" {
+  name        = "docs-team-write"
+  description = "Team that provides the docs for Radarbot"
+  privacy     = "closed"
+}
