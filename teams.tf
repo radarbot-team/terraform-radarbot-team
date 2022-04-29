@@ -28,3 +28,9 @@ resource "github_team" "docs_team_writer" {
   description = "Team that provides the docs for Radarbot"
   privacy     = "closed"
 }
+
+resource "github_team" "checklists_team_writer" {
+  name        = "checklists-team-writer"
+  description = "Team that provides the checklists application"
+  privacy     = "closed"
+}
